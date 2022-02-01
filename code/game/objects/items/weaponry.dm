@@ -17,7 +17,7 @@
 
 /obj/item/banhammer/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/kneejerk)
+	AddElement(/datum/element/kneejerk) 
 
 /obj/item/banhammer/suicide_act(mob/user)
 		user.visible_message(span_suicide("[user] is hitting [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to ban [user.p_them()]self from life."))
@@ -391,7 +391,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/phone
 	name = "red phone"
-	desc = "Should anything ever go wrong..."
+	desc = "People used those to contact each other before the invention of holopads"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "red_phone"
 	force = 3
